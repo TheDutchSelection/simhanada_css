@@ -1,0 +1,52 @@
+
+.button {
+
+  @include button;
+  @include button-color;
+  @include button-sizes;
+
+  &--xs {
+    font-size: 80%;
+    padding: .3em .7em;
+  }
+
+  &--sm {
+    font-size: 85%;
+    padding: .3em 1em;
+  }
+
+  &--lg {
+    font-size: 110%;
+  }
+
+  &--xl {
+    font-size: 125%;
+  }
+
+  &--primary {
+    @include button-color($primary-color, shade($primary-color, 15%), $white);
+  }
+
+  &--submit {
+    @include button-color($dark-turquoise, shade($dark-turquoise, 15%), $white);
+  }
+
+  &--danger {
+    @include button-color($danger-color, shade($danger-color, 15%), $white);
+  }
+
+  &--success {
+    @include button-color($success-color, shade($success-color, 15%), $white);
+  }
+
+  &--notice {
+    @include button-color($notice-color, shade($notice-color, 15%), $white);
+  }
+
+  &--warning {
+    @include button-color($warning-color, shade($warning-color, 15%), $white);
+  }
+
+
+}
+

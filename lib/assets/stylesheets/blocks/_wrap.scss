@@ -1,0 +1,27 @@
+.wrap {
+  padding: 0 $spacing-lg;
+  min-width: $screen-sm;
+  margin: auto;
+
+  @media screen and (min-width: $break-sm) {
+    width: auto;
+  }
+
+  @media screen and (min-width: $break-xl) {
+    width: $screen-xl;
+  }
+
+  &--xs {
+    width: $screen-sm;
+  }
+
+  &--xxl {
+    @media screen and (min-width: $break-xl) {
+      width: auto;
+      max-width: $screen-xxl;
+    }
+  }
+
+}
+
+

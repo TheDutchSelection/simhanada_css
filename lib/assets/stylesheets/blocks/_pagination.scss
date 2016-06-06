@@ -1,0 +1,44 @@
+.pagination {
+
+  font-size: 13px;
+  margin-bottom: $spacing-sm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__page,
+  &__control,
+  &__gap {
+    display: inline-block;
+    padding: .2em .4em;
+    margin-right: .1em;
+  }
+
+  &__page,
+  &__control {
+    background-color: $white;
+    border: 1px $base-border-color solid;
+    border-radius: $base-border-radius;
+    cursor: pointer;
+    color: $link-color;
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  &__page--selected {
+    font-weight: $bold;
+    color: $dark-grey;
+  }
+
+  &__page--disabled {
+    cursor: default;
+    &:hover {
+      color: $dark-grey;
+    }
+  }
+
+  &__gap {
+
+  }
+}

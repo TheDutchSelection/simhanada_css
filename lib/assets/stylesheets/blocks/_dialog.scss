@@ -1,0 +1,26 @@
+.dialog {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-sm;
+
+    input {
+      font-weight: normal;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-weight: $bold;
+    font-size: 16px;
+  }
+
+  &__close {
+    color: $dark-grey;
+  }
+
+  &__body {
+    padding: 0 $spacing-md 0 $spacing-md;
+  }
+}

@@ -1,0 +1,23 @@
+.project {
+
+  display: flex;
+  align-items: center;
+
+  &__client-image {
+    margin-right: 18px;
+    height: 70px;
+  }
+
+  &__image {
+    margin-right: 18px;
+    width: 70px;
+    height: 70px;
+    background: image-url('logo-no-border.png') no-repeat;
+  }
+
+  &__name {
+    color: $orange;
+    font-size: 3.6rem;
+  }
+
+}

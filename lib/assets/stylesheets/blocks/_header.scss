@@ -1,0 +1,20 @@
+.header {
+
+  background: $header-bg-color;
+  padding: $spacing-lg 0;
+  border-bottom: 1px shade($header-bg-color, 10%) solid;
+
+  a {
+    color: $header-link-color;
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}

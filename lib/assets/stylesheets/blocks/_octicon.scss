@@ -1,0 +1,23 @@
+.octicon {
+
+  &--xs {
+    font-size: 80%;
+  }
+
+  &--sm {
+    font-size: 85%;
+    padding: .3em 1em;
+  }
+
+  &--lg {
+    font-size: 200%;
+  }
+
+  &--xl {
+    font-size: 500%;
+  }
+
+  &--xxl {
+    font-size: 1000%;
+  }
+}

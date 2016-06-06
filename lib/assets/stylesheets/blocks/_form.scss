@@ -1,0 +1,12 @@
+.form {
+
+  &--new-session {
+    padding-top: 50px;
+    max-width: 300px;
+    margin: 0 auto;
+
+    legend {
+      font-weight: bold;
+    }
+  }
+}

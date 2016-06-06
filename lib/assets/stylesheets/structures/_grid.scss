@@ -1,0 +1,45 @@
+
+.grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -1 * $grid-gutter;
+
+  &--aligned-top {
+    align-items: inherit;
+  }
+
+  &--bordered {
+    border: 1px red solid;
+    > * {
+      border: 1px blue solid;
+    }
+  }
+
+  /*
+    Adds classes like
+    .col-1-3 {
+      width: 33.33%;
+    }
+    .col-xs-4-5 {
+      width: 33%;
+    }
+  */
+
+  @include build-grid('col');
+  @include build-grid('col', 'xs');
+  @include build-grid('col', 'sm');
+  @include build-grid('col', 'md');
+  @include build-grid('col', 'lg');
+
+  .col {
+    &--aligned-center, &--aligned-center > * {
+      text-align: center;
+    }
+    &--aligned-right, &--aligned-right > * {
+      text-align: right;
+    }
+  }
+
+}

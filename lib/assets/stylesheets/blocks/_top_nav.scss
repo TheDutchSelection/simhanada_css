@@ -1,0 +1,44 @@
+$top-nav-border-color: shade($nav-bg-color, 10%);
+
+.top-nav {
+  @include nav();
+
+  background-color: $nav-bg-color;
+  padding: $spacing-sm 0 0 0;
+  font-size: 18px;
+  //font-weight: $bold;
+  border-bottom: 1px $top-nav-border-color solid;
+  margin-bottom: $spacing-md;
+
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+
+    border-bottom: 0;
+    border-radius: $btn-border-radius $btn-border-radius 0 0;
+
+    &--selected {
+      background-color: $white;
+      margin-bottom: -1px;
+      border: 1px $top-nav-border-color solid;
+      border-top: 2px $header-link-color solid;
+      border-bottom-color: $white;
+    }
+
+    > a {
+      padding: 0 30px;
+      line-height: 36px;
+      color: $nav-text-color;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,93 @@
+
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$orange: #FF8800;
+$blue: #4A90E2;
+$dark-turquoise: #0C6799;
+$turquoise: #2C96C7;
+$light-orange: #FEFAF7;
+$shaded-light-orange: #D7D0CB;
+$dark-grey: #4B4D54;
+$light-grey: darken(#FFF, 15%);
+$shaded-white: #C2C1D2;
+
+// Contextual colors
+$blank-color: $dark-grey;
+$primary-color: #337ab7;
+$success-color: #3c763d;
+$notice-color: #31708f;
+$warning-color: #8a6d3b;
+$danger-color: #a94442;
+$blank-bg-color: $light-grey;
+$primary-bg-color: #337ab7;
+$success-bg-color: #dff0d8;
+$notice-bg-color: #d9edf7;
+$warning-bg-color: #fcf8e3;
+$danger-bg-color: #f2dede;
+
+// Usage colors
+$base-bg-color: $white;
+$base-text-color: $dark-grey;
+$base-border-color: $light-grey;
+
+$header-bg-color: darken($white, 6%);
+$header-text-color: $dark-grey;
+
+$nav-bg-color: darken($white, 4%);
+$nav-text-color: $dark-grey;
+
+$link-color: $blue;
+$link-color-hover: $orange;
+$header-link-color: $orange;
+
+// Fonts
+$sans-serif: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$serif: Georgia, 'Times New Roman', serif;
+$mono: Courier, mono;
+$base-font-family: $sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.2;
+
+// Font weights
+$normal: 400;
+$bold: 600;
+
+// Screen breakpoints (with base font-size: 16px)
+// note: Chrome has issues with breakpoints and rem, so these are in pixels
+$break-sm: 35.5em; // 568px
+$break-md: 48em; // 768px
+$break-lg: 64em; // 1024px
+$break-xl: 80em; // 1280px
+
+// Screen sizes
+$screen-sm: 320px;
+$screen-md: 740px;
+$screen-lg: 960px;
+$screen-xl: 1170px;
+$screen-xxl: 1600px;
+
+// Borders
+$border-width: 1px;
+$base-border-radius: 3px;
+$btn-border-radius: $base-border-radius;
+$block-border-radius: 4px;
+
+// Spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 40px;
+
+// Forms
+$form-max-width: $break-md;
+$form-aligned-label-width: 240px;
+$form-border: $border-width darken($white, 20) solid;
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($turquoise, $lightness: -5%, $alpha: -0.3);
+
+// Grid
+$grid-column-parts: 2 3 4 5 6 9 12 24;
+$grid-gutter: $spacing-sm;
+$grid-padding: 0;

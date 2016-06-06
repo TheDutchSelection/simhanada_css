@@ -1,0 +1,150 @@
+html {
+  font-size: 16px;
+}
+
+// Elements
+body {
+  line-height: $base-line-height;
+  color: $dark-grey;
+  background: $white;
+}
+
+
+h1 {
+  font-size: 32px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+a {
+  // Remove the gray background color from active links in IE 10.
+  background-color: transparent;
+
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-bottom: 1px $light-grey solid;
+}
+
+// Tables
+
+table {
+  border-collapse: collapse;
+  margin: $spacing-sm 0;
+  table-layout: fixed;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+td,
+th {
+  padding: $spacing-sm $spacing-sm $spacing-sm 0;
+  border-bottom: 1px $base-border-color solid;
+  text-align: left;
+}
+
+th {
+  border-color: shade($base-border-color, 25%);
+  font-weight: $bold;
+}
+
+// Form elements
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-size: $base-font-size * 1.3;
+  font-weight: $bold;
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-sm;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: $bold;
+  margin-bottom: $spacing-md;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+#{$all-text-inputs},
+select {
+  background-color: $white;
+  border: $form-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  margin-bottom: $spacing-md;
+  padding: $spacing-xs $spacing-sm;
+  width: 100%;
+  height: 30px;
+
+  &:hover {
+    border-color: shade(darken($white, 20), 20%);
+  }
+
+  &:focus {
+    border-color: $dark-turquoise;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($white, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $form-border;
+    }
+  }
+}
+
+select[multiple] {
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="search"] {
+  appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $spacing-sm;
+}
+
+[type="file"] {
+  margin-bottom: $spacing-md;
+  width: 100%;
+}
+
+#{$all-buttons} {
+  @include button;
+}

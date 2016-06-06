@@ -1,0 +1,29 @@
+.flash {
+  border-radius: $block-border-radius;
+  background: $warning-bg-color;
+  color: $warning-color;
+  border: $border-width darken($warning-bg-color, 30) solid;
+  margin: $spacing-md 0;
+  padding: $spacing-sm;
+
+  &--notice {
+    background: $notice-bg-color;
+    color: $notice-color;
+    border-color: darken($notice-bg-color, 30);
+  }
+
+  &--alert {
+    background: $warning-bg-color;
+    color: $warning-color;
+    border-color: darken($warning-bg-color, 30);
+  }
+
+  &--error {
+    background: $danger-bg-color;
+    color: $danger-color;
+    border-color: darken($danger-bg-color, 30);
+  }
+
+
+
+}

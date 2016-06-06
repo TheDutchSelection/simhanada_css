@@ -1,0 +1,27 @@
+.input {
+
+  &-xs {
+    width: 3em;
+  }
+
+  &-sm {
+    width: 5em;
+  }
+
+  &-md {
+    width: 15em;
+  }
+
+  &-lg {
+    width: 25em;
+  }
+
+  &-full {
+    width: 100%;
+  }
+
+  &-half {
+    width: 50%;
+  }
+
+}

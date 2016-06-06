@@ -1,0 +1,26 @@
+.definition {
+
+  @include clearfix;
+
+  > dt,
+  > dd {
+    float: left;
+    padding: .5em 0;
+  }
+
+  dt {
+    float: left;
+    clear: left;
+    font-weight: $bold;
+    text-align: right;
+    width: 10em;
+    margin: 0;
+  }
+
+  dd {
+    float: left;
+    width: 30em;
+    margin-left: .5em;
+  }
+
+}

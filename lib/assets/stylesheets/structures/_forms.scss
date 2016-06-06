@@ -1,0 +1,109 @@
+.form {
+
+  max-width: $form-max-width;
+
+  .form__group {
+    font-weight: $bold;
+    margin-bottom: $spacing-sm;
+  }
+
+  label,
+  .form__label,
+  .form__input,
+  .form__control-label{
+    margin-bottom: $spacing-sm;
+  }
+
+  label,
+  .form__label {
+    display: block;
+
+    input[type=checkbox],
+    input[type=radio] {
+      margin: 0 $spacing-xs 0 0;
+    }
+  }
+
+  .form__errors {
+    margin-bottom: $spacing-md;
+    color: $danger-color;
+  }
+
+  .form__control-group {
+    margin-bottom: $spacing-sm;
+    label {
+      margin-bottom: $spacing-xs;
+    }
+  }
+
+  .form__control-group--inline {
+    label, .form__label {
+      display: inline-block;
+      margin-right: $spacing-xs;
+    }
+  }
+
+  &--aligned {
+
+    .form__group {
+
+      @media screen and (min-width: $break-sm) {
+
+        @include clearfix;
+
+        label,
+        .form__label {
+          float: left;
+          width: calc(#{$form-aligned-label-width} - #{$grid-gutter});
+          text-align: right;
+          margin-top: $spacing-xs;
+          margin-right: $grid-gutter;
+        }
+
+        .form__input {
+          float: left;
+          width: calc(#{$form-max-width} - #{$form-aligned-label-width} - #{$grid-gutter});
+        }
+
+        .form__control-group,
+        .form__control-label {
+          float: left;
+          margin-left: $form-aligned-label-width;
+        }
+
+        .form__control-group label,
+        .form__control-label {
+          float: none;
+          display: block;
+          width: auto;
+          text-align: left;
+          margin-top: 0;
+          margin-right: 0;
+        }
+
+      }
+
+    }
+
+    legend,
+    .form__actions,
+    .form__errors {
+      margin-bottom: $spacing-sm;
+
+      @media screen and (min-width: $break-sm) {
+        margin-left: $form-aligned-label-width;
+      }
+    }
+
+  }
+
+}
+
+
+.field_with_errors {
+  display: inline;
+  label,
+  .form__label {
+    color: $danger-color;
+  }
+}

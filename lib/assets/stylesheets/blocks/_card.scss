@@ -1,0 +1,30 @@
+.card {
+
+  background-color: $white;
+  border-radius: $block-border-radius;
+  padding: 0;
+
+  &--bordered {
+    border: $border-width $shaded-white solid;
+
+    .card__heading {
+      border-bottom: $border-width $shaded-white solid;
+    }
+  }
+
+  &--dimmed {
+    background-color: darken($white, 2);
+    border-color: darken($white, 15);
+    .card__heading {
+      background-color: darken($white, 5);
+      border-color: darken($white, 15);
+    }
+  }
+
+  &--bordered, &--dimmed {
+    .card__heading, .card__body {
+      padding: $spacing-md;
+    }
+  }
+
+}
