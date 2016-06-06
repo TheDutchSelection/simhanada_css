@@ -24,6 +24,12 @@ In your scss file:
 @import 'simhanada';
 ```
 
+In your javascript file:
+```
+//= require simhanada/lib/babel-polyfill/6.7.4/polyfill
+//= require simhanada/nav/dropdown_nav
+```
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
