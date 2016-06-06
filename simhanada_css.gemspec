@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'simhanada_css/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Simhanada CSS"
+  spec.name          = "simhanada_css"
   spec.version       = SimhanadaCss::VERSION
   spec.authors       = ["Martijn van Leeuwen"]
   spec.email         = ["m.vanleeuwen@thedutchselection.com"]
