@@ -7,7 +7,7 @@ This is Simhanada, CSS and JS cornerstones of all TDS projects.
 Add this line to your application's Gemfile:
 
 ```
-gem 'simhanada', github: 'TheDutchSelection/simhanada', branch: 'master'
+gem 'simhanada', github: 'TheDutchSelection/simhanada_css', branch: 'master'
 ```
 
 And then execute:
@@ -32,7 +32,7 @@ In your javascript file:
 or include seperate parts
 ```
 //= require simhanada/polyfill
-//= require simhanada/dropdown_nav
+//= require simhanada/nav
 ```
 
 ## License
