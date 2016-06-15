@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'simhanada';
+
+.showcase {
+  display: flex;
+  &__nav {
+    width: 200px;
+    flex-shrink: 0;
+  }
+  &__main {
+    flex-grow: 1;
+  }
+}
+
+.showcase-example {
+  border: 1px $base-border-color solid;
+  border-radius: $base-border-radius;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  &__sample {
+    margin-bottom: $spacing-lg;
+  }
+  &__code {
+    overflow: auto;
+  }
+}
+
+
+.showcase-grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1 * $grid-gutter;
+  align-items: inherit;
+
+  > * {
+    margin-bottom: 10px;
+  }
+
+  @include build-grid('col');
+
+}
+
+.subject {
+  color: $primary-color;
+}
+
+.code {
+  border: 1px $notice-bg-color solid;;
+  background-color: tint($notice-bg-color, 50%);
+  color: $notice-color;
+  border-radius: $base-border-radius;
+  padding: 5px;
+  font-family: $monospace;
+  font-size: 13px;
+}

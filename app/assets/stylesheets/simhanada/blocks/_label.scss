@@ -1,0 +1,49 @@
+.label {
+  display: inline-block;
+  border-radius: $base-border-radius;
+  padding: .15em .5em;
+  font-size: $label-default-font-size;
+  line-height: $base-line-height;
+  background-color: $label-default-bg-color;
+  color: white;
+  font-weight: $bold;
+
+  &--xs {
+    font-size: 65%;
+  }
+
+  &--sm {
+    font-size: 70%;
+  }
+
+  &--lg {
+    font-size: 100%;
+    padding: 0.1em 0.5em;
+  }
+
+  &--xl {
+    font-size: 125%;
+    padding: 0.1em 0.5em;
+  }
+
+  &--primary {
+    background-color: $label-primary-bg-color;
+  }
+
+  &--success {
+    background-color: $label-success-bg-color;
+  }
+
+  &--notice {
+    background-color: $label-notice-bg-color;
+  }
+
+  &--warning {
+    background-color: $label-warning-bg-color;
+  }
+
+  &--danger {
+    background-color: $label-danger-bg-color;
+  }
+}
+

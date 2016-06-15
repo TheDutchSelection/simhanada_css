@@ -1,0 +1,1 @@
+//= require ./lib/babel-polyfill/6.7.4/polyfill

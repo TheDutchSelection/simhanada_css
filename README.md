@@ -1,13 +1,13 @@
-# SimhanadaCss
+# Simhanada
 
-This is Simhanada CSS, the work of CSS mastermind Martijn van Leeuwen.
+This is Simhanada, CSS and JS cornerstones of all TDS projects.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```
-gem 'simhanada_css', github: 'TheDutchSelection/simhanada_css', branch: 'master'
+gem 'simhanada', github: 'TheDutchSelection/simhanada', branch: 'master'
 ```
 
 And then execute:
@@ -26,8 +26,13 @@ In your scss file:
 
 In your javascript file:
 ```
-//= require simhanada/lib/babel-polyfill/6.7.4/polyfill
-//= require simhanada/nav/dropdown_nav
+//= require simhanada
+```
+
+or include seperate parts
+```
+//= require simhanada/polyfill
+//= require simhanada/dropdown_nav
 ```
 
 ## License
