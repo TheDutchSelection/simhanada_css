@@ -1,0 +1,22 @@
+/*
+ * Used methodology BEM
+ * - https://css-tricks.com/bem-101/
+ * - http://getbem.com
+*/
+
+// prerequisites
+@import 'variables';
+@import 'bourbon';
+
+@import 'base/mixins';
+@import 'base/utilities';
+@import 'base/reset';
+@import 'base/elements';
+@import 'base/typography';
+
+@import 'blocks/*';
+@import 'structures/*';
+
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic');
+@import url('//cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css');
+

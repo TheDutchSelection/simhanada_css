@@ -8,3 +8,7 @@
 /spec/reports/
 /tmp/
 .idea/
+
+showcase/db/*.sqlite3
+showcase/log/*.log
+showcase/tmp/

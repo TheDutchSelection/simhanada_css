@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simhanada</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="wrap header__wrapper">
+
+        <%= link_to root_path do %>
+          <div class="project">
+            <div class="project__image"></div>
+            <div class="project__name">Simhanada</div>
+          </div>
+        <% end %>
+
+      </div>
+    </header>
+
+    <main class="main wrap">
+      <div class="main__content">
+        <div class="showcase">
+          <div class="showcase__nav">
+            <b>Showcase</b>
+            <%= render partial: 'showcase/nav' %>
+          </div>
+          <div class="showcase__main">
+            <%= yield %>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        &copy; The Dutch Selection 2016 - All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

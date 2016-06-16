@@ -1,0 +1,5 @@
+.heading {
+  &--bottom-border {
+    border-bottom: 1px $base-border-color dotted;
+  }
+}
