@@ -35,6 +35,14 @@ or include seperate parts
 //= require simhanada/nav
 ```
 
+## Showcase
+
+```
+showcase/bin/rails s
+```
+
+And check http://localhost:3000 in your browser
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
