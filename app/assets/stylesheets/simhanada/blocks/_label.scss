@@ -1,7 +1,7 @@
 .label {
   display: inline-block;
   border-radius: $base-border-radius;
-  padding: .15em .5em;
+  padding: .1em .4em;
   font-size: $label-default-font-size;
   line-height: $base-line-height;
   background-color: $label-default-bg-color;
@@ -18,12 +18,10 @@
 
   &--lg {
     font-size: 100%;
-    padding: 0.1em 0.5em;
   }
 
   &--xl {
     font-size: 125%;
-    padding: 0.1em 0.5em;
   }
 
   &--primary {

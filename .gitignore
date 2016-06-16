@@ -9,6 +9,6 @@
 /tmp/
 .idea/
 
-spec/dummy/db/*.sqlite3
-spec/dummy/log/*.log
-spec/dummy/tmp/
+showcase/db/*.sqlite3
+showcase/log/*.log
+showcase/tmp/

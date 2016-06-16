@@ -17,10 +17,3 @@ group :development, :test do
   gem 'sass-rails', '>= 5.0.4'
   gem 'sprockets-es6', '>= 0.9.0'
 end
-
-group :test do
-  gem 'jasmine-rails'
-  gem 'rspec', '~> 3.5.0.beta3'
-  gem 'rspec-core', '~> 3.5.0.beta3'
-  gem 'rspec-rails', '>= 3.5.0.beta3'
-end
