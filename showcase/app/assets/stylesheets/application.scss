@@ -57,13 +57,13 @@
 }
 
 .subject {
-  color: $primary-color;
+  color: $primary-text-color;
 }
 
 .code {
   border: 1px $notice-bg-color solid;;
   background-color: tint($notice-bg-color, 50%);
-  color: $notice-color;
+  color: $notice-text-color;
   border-radius: $base-border-radius;
   padding: 5px;
   font-family: $monospace;

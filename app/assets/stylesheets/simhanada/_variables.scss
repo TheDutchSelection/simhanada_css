@@ -16,17 +16,28 @@ $light-grey: darken(#FFF, 15%);
 $shaded-white: #C2C1D2;
 
 // Contextual colors
-$blank-color: $dark-grey;
-$primary-color: #337ab7;
-$success-color: #3c763d;
-$notice-color: #31708f;
-$warning-color: #8a6d3b;
-$danger-color: #a94442;
+$blank-color: $white;
+$blank-text-color: $dark-grey;
 $blank-bg-color: $light-grey;
+
+$primary-color: #337ab7;
+$primary-text-color: $white;
 $primary-bg-color: #337ab7;
+
+$success-color: $green;
+$success-text-color: #3c763d;
 $success-bg-color: #dff0d8;
+
+$notice-color: $blue;
+$notice-text-color: #31708f;
 $notice-bg-color: #d9edf7;
+
+$warning-color: $orange;
+$warning-text-color: #8a6d3b;
 $warning-bg-color: #fcf8e3;
+
+$danger-color: $red;
+$danger-text-color: #a94442;
 $danger-bg-color: #f2dede;
 
 // Usage colors
@@ -99,8 +110,8 @@ $grid-padding: 0;
 $label-default-font-size: 75%;
 $label-default-bg-color: darken($white, 40%);
 $label-primary-bg-color: $primary-color;
-$label-success-bg-color: $green;
-$label-notice-bg-color: $blue;
-$label-warning-bg-color: $orange;
-$label-danger-bg-color: $red;
+$label-success-bg-color: $success-color;
+$label-notice-bg-color: $notice-color;
+$label-warning-bg-color: $warning-color;
+$label-danger-bg-color: $danger-color;
 

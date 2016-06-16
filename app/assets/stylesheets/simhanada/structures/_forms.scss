@@ -26,7 +26,7 @@
 
   .form__errors {
     margin-bottom: $spacing-md;
-    color: $danger-color;
+    color: $danger-text-color;
   }
 
   .form__control-group {
@@ -104,6 +104,6 @@
   display: inline;
   label,
   .form__label {
-    color: $danger-color;
+    color: $danger-text-color;
   }
 }
