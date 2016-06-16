@@ -5,15 +5,15 @@
 .field_with_errors {
   display: inline-block;
   label {
-    color: $danger-color;
+    color: $danger-text-color;
     font-weight: $bold;
   }
   input,
   textarea,
   select {
     background-color: tint($danger-bg-color, 40%)!important;
-    color: $danger-color;
-    border-color: $danger-color!important;
+    color: $danger-text-color;
+    border-color: $danger-text-color !important;
   }
 }
 

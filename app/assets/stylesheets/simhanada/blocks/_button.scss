@@ -27,10 +27,6 @@
     @include button-color($primary-color, shade($primary-color, 15%), $white);
   }
 
-  &--submit {
-    @include button-color($dark-turquoise, shade($dark-turquoise, 15%), $white);
-  }
-
   &--danger {
     @include button-color($danger-color, shade($danger-color, 15%), $white);
   }
@@ -47,6 +43,11 @@
     @include button-color($warning-color, shade($warning-color, 15%), $white);
   }
 
+  &--block {
+    display: block;
+    margin-bottom: $spacing-sm;
+    text-align: center;
+  }
 
 }
 

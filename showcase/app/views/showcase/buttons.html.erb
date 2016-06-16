@@ -1,0 +1,63 @@
+<h1>Buttons</h1>
+
+<h2>Different elements</h2>
+
+<%= showcase_example do %>
+  <a href="#" class="button">Link</a>
+  <button class="button">Button</button>
+  <input type="button" class="button" value="Input button">
+  <input type="submit" class="button" value="Submit">
+  <span class="button">Inline</span>
+<% end %>
+
+<h2>Size modifiers</h2>
+
+<%= showcase_example do %>
+  <a href="#" class="button button--xs">Extra Small</a>
+  <a href="#" class="button button--sm">Small</a>
+  <a href="#" class="button">Normal</a>
+  <a href="#" class="button button--lg">Large</a>
+  <a href="#" class="button button--xl">Extra Large</a>
+<% end %>
+
+<h2>Contextual modifiers</h2>
+
+<%= showcase_example do %>
+  <a href="#" class="button">Normal</a>
+  <a href="#" class="button button--primary">Primary</a>
+  <a href="#" class="button button--success">Success</a>
+  <a href="#" class="button button--notice">Notice</a>
+  <a href="#" class="button button--warning">Warning</a>
+  <a href="#" class="button button--danger">Danger</a>
+<% end %>
+
+<h2>State modifiers</h2>
+
+<%= showcase_example do %>
+  <a href="#" class="button">Normal</a>
+  <a href="#" class="button active">Active Link</a>
+  <button class="button active">Active Button</button>
+  <a href="#" class="button disabled">Disabled Link</a>
+  <button class="button" disabled>Disabled Button</button>
+<% end %>
+
+
+<h2>Block elements</h2>
+
+<%= showcase_example do %>
+  <a href="#" class="button button--block">Normal</a>
+  <a href="#" class="button button--block button--primary">Primary</a>
+<% end %>
+
+<h2>Blocks within a grid</h2>
+
+<%= showcase_example do %>
+  <div class="grid">
+    <div class="col-1-2">
+      <a href="#" class="button button--block button--primary">Primary</a>
+    </div>
+    <div class="col-1-2">
+      <a href="#" class="button button--block">Normal</a>
+    </div>
+  </div>
+<% end %>
