@@ -1,4 +1,7 @@
 .dialog {
+
+  z-index: $z-index-level-2;
+
   &__heading {
     display: flex;
     justify-content: space-between;

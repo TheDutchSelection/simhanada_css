@@ -37,7 +37,7 @@
     top: 30px;
     background-color: $white;
     white-space: nowrap;
-    z-index: 999;
+    z-index: $z-index-level-5;
     border: 1px darken($white, 10) solid;
     padding: 10px 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);

@@ -37,7 +37,8 @@
   }
 
   .form__control-group--inline {
-    label, .form__label {
+    label,
+    .form__label {
       display: inline-block;
       margin-right: $spacing-xs;
     }
