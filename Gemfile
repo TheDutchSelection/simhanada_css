@@ -6,9 +6,9 @@ gemspec
 # Local gems
 
 group :development, :test do
-  ruby '2.3.0'
+  ruby '2.3.1'
 
-  gem 'rails', '5.0.0.rc1'
+  gem 'rails', '5.0.0.1'
   gem 'sqlite3'
 
   # todo: these are defined in the gemspec, but must be used here.
