@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'autoprefixer-rails', '>= 6.3.6'
   spec.add_runtime_dependency 'bourbon', '>= 4.2.7'
-  spec.add_runtime_dependency 'sass-rails', '>= 5.0.4'
+  spec.add_runtime_dependency 'sass-rails', '>= 5.0.6'
   spec.add_runtime_dependency 'sprockets-es6', '>= 0.9.0'
 end

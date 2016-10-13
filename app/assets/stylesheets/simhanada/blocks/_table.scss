@@ -1,7 +1,10 @@
 .table {
 
   &--condensed {
-    tr, td {
+    tr {
+      padding: 0;
+    }
+    th, td {
       padding-top: 0.2em;
       padding-bottom: 0.2em;
     }
@@ -9,6 +12,30 @@
 
   &--full {
     width: 100%;
+  }
+
+  &--striped {
+    th, td {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: $table-stripe-color;
+    }
+  }
+
+  &--results {
+    font-size: 90%;
+    width: 100%;
+    tr {
+      padding: 0;
+    }
+    th, td {
+      padding: 0.4em 1em;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: $table-stripe-color;
+    }
   }
 
 }
