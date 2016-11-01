@@ -1,1 +1,1 @@
-//= require ./lib/babel-polyfill/6.7.4/polyfill
+//= require ./lib/babel-polyfill/6.16.0/polyfill
