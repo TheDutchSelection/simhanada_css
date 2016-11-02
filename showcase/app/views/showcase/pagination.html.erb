@@ -16,3 +16,9 @@
     <span class="pagination__control"><a href="#">Last &raquo;</a></span>
   </nav>
 <% end %>
+
+<h2>Generated with kaminara with theme simhanada</h2>
+
+<%= showcase_example do %>
+  <%= paginate Kaminari.paginate_array([], total_count: 145).page("4").per(10), theme: 'simhanada' %>
+<% end %>
