@@ -8,7 +8,7 @@ gemspec
 group :development, :test do
   ruby '2.3.1'
 
-  gem 'rails', '5.0.0'
+  gem 'rails', '5.0.0.1'
   gem 'sqlite3'
 
   # todo: these are defined in the gemspec, but must be used here.
@@ -16,4 +16,5 @@ group :development, :test do
   gem 'bourbon', '>= 4.2.7'
   gem 'sass-rails', '>= 5.0.6'
   gem 'sprockets-es6', '>= 0.9.0'
+  gem 'kaminari', '>= 0.17.0'
 end
