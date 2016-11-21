@@ -1,1 +1,1 @@
-//= require ./nav/dropdown_nav
+//= require_relative nav/dropdown_nav

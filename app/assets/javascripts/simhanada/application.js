@@ -1,2 +1,2 @@
-//= require ./polyfill
-//= require ./nav
+//= require_relative polyfill
+//= require_relative nav
