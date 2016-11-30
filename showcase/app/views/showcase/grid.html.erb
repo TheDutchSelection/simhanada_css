@@ -1,0 +1,51 @@
+<h1>Grid</h1>
+
+<h2>Basic Grid</h2>
+
+<%= showcase_example do %>
+  <div class="grid grid--showcase">
+    <div class="col-1-2">1/2</div>
+    <div class="col-1-2">1/2</div>
+    <div class="col-1-4">1/4</div>
+    <div class="col-3-4">3/4</div>
+    <div class="col-1-4 col-offset-3-4">1/4 + 3/4 offset</div>
+    <div class="col-1-4">1/4</div>
+    <div class="col-1-4 col-offset-1-4">1/4 + 1/4 offset</div>
+    <div class="col-1-4">1/4</div>
+  </div>
+<% end %>
+
+<h2>Responsive Grid</h2>
+<p>
+  Change your screen sice to see the difference. <br />
+  <span class="label res-xs-color">Extra Small < 320px</span>
+  <span class="label res-sm-color">Small > 320px</span>
+  <span class="label res-md-color">Medium > 740px</span>
+  <span class="label res-lg-color">Large > 960px</span>
+  <span class="label res-xl-color">Extra Large > 1170px</span>
+</p>
+<%= showcase_example do %>
+  <div class="grid grid--showcase grid--res-bg-color">
+    <div class="col-xs-1-1 col-sm-1-2 col-md-1-4">Column 1</div>
+    <div class="col-1-1 col-sm-1-2 col-md-1-4">Column 2</div>
+    <div class="col-1-1 col-sm-offset-1-2 col-sm-1-2 col-md-1-4">Column 3</div>
+    <div class="col-1-1 col-sm-1-2 col-md-1-4">Column 4</div>
+    <div class="col-1-1 col-sm-1-2 col-md-1-4">Column 5</div>
+    <div class="col-1-1 col-sm-1-2 col-md-1-4">Column 6</div>
+  </div>
+<% end %>
+
+<h2>Grid with outlines</h2>
+<p>Handy when you are developing</p>
+<%= showcase_example do %>
+  <div class="grid grid--outline">
+    <div class="col-1-2">1/2</div>
+    <div class="col-1-2">1/2</div>
+    <div class="col-1-4">1/4</div>
+    <div class="col-3-4">3/4</div>
+    <div class="col-1-4 col-offset-3-4">1/4 + 3/4 offset</div>
+    <div class="col-1-4">1/4</div>
+    <div class="col-1-4 col-offset-1-4">1/4 + 1/4 offset</div>
+    <div class="col-1-4">1/4</div>
+  </div>
+<% end %>

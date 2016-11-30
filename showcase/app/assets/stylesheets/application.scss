@@ -17,14 +17,18 @@
 @import 'simhanada';
 
 .showcase {
-  display: flex;
-  &__nav {
-    width: 200px;
-    flex-shrink: 0;
+
+  @media screen and (min-width: #{$break-md}) {
+    display: flex;
+    &__nav {
+      width: 200px;
+      flex-shrink: 0;
+    }
+    &__main {
+      flex-grow: 1;
+    }
   }
-  &__main {
-    flex-grow: 1;
-  }
+
 }
 
 .showcase-example {
@@ -53,6 +57,22 @@
   }
 
   @include build-grid('col');
+
+}
+
+.showcase-navigation {
+
+  > ul > li {
+    font-weight: bold;
+  }
+
+  > ul > li > ul > li {
+    font-weight: normal;
+  }
+
+  > ul > li > ul {
+    margin-bottom: $spacing-md;
+  }
 
 }
 

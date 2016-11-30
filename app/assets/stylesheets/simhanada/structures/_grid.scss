@@ -10,10 +10,39 @@
     align-items: inherit;
   }
 
-  &--bordered {
-    border: 1px red solid;
+  &--outline {
+    outline: 1px red solid;
+    padding: 3px 3px 0 3px;
     > * {
-      border: 1px blue solid;
+      outline: 1px blue solid;
+      margin-bottom: 3px;
+    }
+  }
+
+  &--showcase {
+    > * {
+      padding: $spacing-md;
+      background-color: $light-grey;
+    }
+  }
+
+  &--res-bg-color {
+    > * {
+      color: $white;
+      background-color: $res-xs-color;
+
+      @media screen and (min-width: #{$break-sm}) {
+        background-color: $res-sm-color;
+      }
+      @media screen and (min-width: #{$break-md}) {
+        background-color: $res-md-color;
+      }
+      @media screen and (min-width: #{$break-lg}) {
+        background-color: $res-lg-color;
+      }
+      @media screen and (min-width: #{$break-xl}) {
+        background-color: $res-xl-color;
+      }
     }
   }
 

@@ -102,27 +102,49 @@
       $width: ($i / $part) * 100%;
 
       @if $break == '' or $break == 'xs' {
-        .#{$name}-#{$i}-#{$part} {
-          @include build-grid-col($width, $gutter, $padding)
+        .#{$name}-#{$i}-#{$part}, .#{$name}-xs-#{$i}-#{$part}  {
+          @include build-grid-col($width, $gutter, $padding);
+        }
+        .#{$name}-offset-#{$i}-#{$part}, .#{$name}-xs-offset-#{$i}-#{$part}  {
+          @include build-grid-offset($width, $gutter);
         }
       }
       @else {
         .#{$name}-#{$break}-#{$i}-#{$part} {
           @if $break == 'sm' {
             @media screen and (min-width: #{$break-sm}) {
-              @include build-grid-col($width, $gutter, $padding)
+              @include build-grid-col($width, $gutter, $padding);
             }
           } @else if $break == 'md' {
             @media screen and (min-width: #{$break-md}) {
-              @include build-grid-col($width, $gutter, $padding)
+              @include build-grid-col($width, $gutter, $padding);
             }
           } @else if $break == 'lg' {
             @media screen and (min-width: #{$break-lg}) {
-              @include build-grid-col($width, $gutter, $padding)
+              @include build-grid-col($width, $gutter, $padding);
             }
           } @else if $break == 'xl' {
             @media screen and (min-width: #{$break-xl}) {
-              @include build-grid-col($width, $gutter, $padding)
+              @include build-grid-col($width, $gutter, $padding);
+            }
+          }
+        }
+        .#{$name}-#{$break}-offset-#{$i}-#{$part} {
+          @if $break == 'sm' {
+            @media screen and (min-width: #{$break-sm}) {
+              @include build-grid-offset($width, $gutter);
+            }
+          } @else if $break == 'md' {
+            @media screen and (min-width: #{$break-md}) {
+              @include build-grid-offset($width, $gutter);
+            }
+          } @else if $break == 'lg' {
+            @media screen and (min-width: #{$break-lg}) {
+              @include build-grid-offset($width, $gutter);
+            }
+          } @else if $break == 'xl' {
+            @media screen and (min-width: #{$break-xl}) {
+              @include build-grid-offset($width, $gutter);
             }
           }
         }
@@ -136,4 +158,9 @@
   width: calc(#{$width} - #{$gutter});
   padding: $padding;
   margin-left: $gutter;
+}
+
+@mixin build-grid-offset($width, $gutter) {
+  display: inline-block;
+  margin-left: calc(#{$width} + #{$gutter});
 }

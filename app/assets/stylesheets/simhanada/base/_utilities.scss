@@ -29,3 +29,46 @@
 .text-muted {
   color: $grey;
 }
+
+.res-bg-color {
+  color: $white;
+  background-color: $res-xs-color;
+
+  @media screen and (min-width: #{$break-sm}) {
+    background-color: $res-sm-color;
+  }
+  @media screen and (min-width: #{$break-md}) {
+    background-color: $res-md-color;
+  }
+  @media screen and (min-width: #{$break-lg}) {
+    background-color: $res-lg-color;
+  }
+  @media screen and (min-width: #{$break-xl}) {
+    background-color: $res-xl-color;
+  }
+}
+
+.res-xs-color {
+  color: $white;
+  background-color: $res-xs-color !important;
+}
+
+.res-sm-color {
+  color: $white;
+  background-color: $res-sm-color !important;
+}
+
+.res-md-color {
+  color: $white;
+  background-color: $res-md-color !important;
+}
+
+.res-lg-color {
+  color: $white;
+  background-color: $res-lg-color !important;
+}
+
+.res-xl-color {
+  color: $white;
+  background-color: $res-xl-color !important;
+}
