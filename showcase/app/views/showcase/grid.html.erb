@@ -35,6 +35,131 @@
   </div>
 <% end %>
 
+<h2>Grid alignment</h2>
+
+<h3>Middle (default)</h3>
+<%= showcase_example do %>
+  <div class="grid grid--showcase">
+    <div class="col-1-3">
+      Pick a color if you like
+    </div>
+    <div class="col-1-3">
+      Choose between
+    </div>
+    <div class="col-1-3">
+      <ul>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Red</li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<h3>Top</h3>
+<%= showcase_example do %>
+  <div class="grid grid--showcase grid--align-top">
+    <div class="col-1-3">
+      Pick a color if you like
+    </div>
+    <div class="col-1-3">
+      Choose between
+    </div>
+    <div class="col-1-3">
+      <ul>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Red</li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<h3>Bottom</h3>
+<%= showcase_example do %>
+  <div class="grid grid--showcase grid--align-bottom">
+    <div class="col-1-3">
+      Pick a color if you like
+    </div>
+    <div class="col-1-3">
+      Choose between
+    </div>
+    <div class="col-1-3">
+      <ul>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Red</li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<h3>Stretch</h3>
+<p>Can be used for layouts</p>
+<%= showcase_example do %>
+  <div class="grid grid--showcase grid--align-stretch">
+    <div class="col-1-3">
+      Pick a color if you like
+    </div>
+    <div class="col-1-3">
+      Choose between
+    </div>
+    <div class="col-1-3">
+      <ul>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Red</li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<h3>Baseline</h3>
+<%= showcase_example do %>
+  <div class="grid grid--showcase grid--align-baseline">
+    <div class="col-1-3">
+      <span style="font-size: 84%">i am small</span>
+    </div>
+    <div class="col-1-3">
+      i am normal
+    </div>
+    <div class="col-1-3">
+      <span style="font-size: 150%">i am large</span>
+    </div>
+  </div>
+<% end %>
+
+<h2>Alignment within grid</h2>
+
+<%= showcase_example do %>
+  <div class="grid grid--showcase">
+    <div class="col-1-5 col--align-top">Top</div>
+    <div class="col-1-5 col--align-bottom">Bottom</div>
+    <div class="col-1-5 col--align-middle">Middle</div>
+    <div class="col-1-5 col--align-stretch">Stretch</div>
+    <div class="col-1-5">
+      <ul>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Red</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid grid--showcase grid--align-bottom">
+    <div class="col-1-5">One</div>
+    <div class="col-1-5">Two</div>
+    <div class="col-1-5 col--align-top">Top</div>
+    <div class="col-1-5 col--align-stretch">Stretch</div>
+    <div class="col-1-5">
+      <ul>
+        <li>Green</li>
+        <li>Yellow</li>
+        <li>Red</li>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
 <h2>Grid with outlines</h2>
 <p>Handy when you are developing</p>
 <%= showcase_example do %>
