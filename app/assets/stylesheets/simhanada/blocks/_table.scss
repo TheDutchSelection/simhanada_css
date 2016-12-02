@@ -37,6 +37,15 @@
       background-color: $table-stripe-color;
     }
   }
+}
 
+.tr {
+  &--danger {
+    background-color: $danger-bg-color;
+    color: $danger-text-color;
+  }
+  &--danger-bg {
+    background-color: $danger-bg-color;
+  }
 }
 

@@ -26,6 +26,12 @@
   font-size: 80%;
 }
 
+@include build-contextual-utility('blank');
+@include build-contextual-utility('success');
+@include build-contextual-utility('notice');
+@include build-contextual-utility('warning');
+@include build-contextual-utility('danger');
+
 .text-muted {
   color: $grey;
 }
