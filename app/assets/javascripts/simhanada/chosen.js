@@ -1,0 +1,1 @@
+//= require ./lib/chosen/1.6.2
