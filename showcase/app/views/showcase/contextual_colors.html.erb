@@ -1,0 +1,41 @@
+<h1>Contextual colors</h1>
+
+<% [:blank, :success, :notice, :warning, :danger].each do |context| %>
+
+  <h2><%= context.to_s.capitalize %></h2>
+
+  <%= showcase_example do %>
+    <div class="<%= context %>"><b>.<%= context %></b>: Background and Text</div>
+    <div class="text-<%= context %>"><b>.text-<%= context %></b>: Text only </div>
+    <div class="bg-<%= context %>"><b>.bg-<%= context %></b>: Background only</div>
+  <% end %>
+
+  <%= showcase_example do %>
+    Lorem ipsum dolor sit amet, <span class="<%= context %>">consectetur adipiscing elit</span>.
+    Maecenas a <span class="text-<%= context %>">sollicitudin tellus</span>. Sed porta odio <span class="bg-<%= context %>">egestas ultricies</span> maximus.
+  <% end %>
+
+  <%= showcase_example do %>
+    <table>
+      <tr>
+        <td>Classname</td>
+        <td>none</td>
+      </tr>
+      <tr class="<%= context %>">
+        <td><b>Classname:</b></td>
+        <td>.<%= context %></td>
+      </tr>
+      <tr class="text-<%= context %>">
+        <td><b>Classname:</b></td>
+        <td>.text-<%= context %></td>
+      </tr>
+      <tr class="bg-<%= context %>">
+        <td><b>Classname:</b></td>
+        <td>.bg-<%= context %></td>
+      </tr>
+    </table>
+  <% end %>
+
+<% end %>
+
+

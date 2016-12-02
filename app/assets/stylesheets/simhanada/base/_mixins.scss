@@ -164,3 +164,34 @@
   display: inline-block;
   margin-left: calc(#{$width} + #{$gutter});
 }
+
+@mixin build-contextual-utility($context) {
+  $background-colors: (
+    blank: $blank-bg-color,
+    primary: $primary-bg-color,
+    success: $success-bg-color,
+    notice: $notice-bg-color,
+    warning: $warning-bg-color,
+    danger: $danger-bg-color
+  );
+  
+  $text-colors: (
+    blank: $blank-text-color,
+    primary: $primary-text-color,
+    success: $success-text-color,
+    notice: $notice-text-color,
+    warning: $warning-text-color,
+    danger: $danger-text-color
+  );
+  
+  .#{$context} {
+    background-color: map-get($background-colors, $context);
+    color: map-get($text-colors, $context);
+  }
+  .bg-#{$context} {
+    background-color: map-get($background-colors, $context);
+  }
+  .text-#{$context} {
+    color: map-get($text-colors, $context);
+  }
+}
