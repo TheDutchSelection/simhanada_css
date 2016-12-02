@@ -1,1 +1,1 @@
-//= require ./lib/chosen/1.6.2/*
+//= require_tree ./lib/chosen/1.6.2
