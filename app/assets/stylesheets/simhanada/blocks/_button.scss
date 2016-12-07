@@ -1,49 +1,50 @@
 
 .button {
-
   @include button;
   @include button-color;
   @include button-sizes;
+}
 
-  &--xs {
+.button, #{$all-buttons} {
+  &.button--xs {
     font-size: 80%;
     padding: .3em .7em;
   }
 
-  &--sm {
+  &.button--sm {
     font-size: 85%;
     padding: .3em 1em;
   }
 
-  &--lg {
+  &.button--lg {
     font-size: 110%;
   }
 
-  &--xl {
+  &.button--xl {
     font-size: 125%;
   }
 
-  &--primary {
+  &.button--primary {
     @include button-color($primary-color, shade($primary-color, 15%), $white);
   }
 
-  &--danger {
+  &.button--danger {
     @include button-color($danger-color, shade($danger-color, 15%), $white);
   }
 
-  &--success {
+  &.button--success {
     @include button-color($success-color, shade($success-color, 15%), $white);
   }
 
-  &--notice {
+  &.button--notice {
     @include button-color($notice-color, shade($notice-color, 15%), $white);
   }
 
-  &--warning {
+  &.button--warning {
     @include button-color($warning-color, shade($warning-color, 15%), $white);
   }
 
-  &--block {
+  &.button--block {
     display: block;
     margin-bottom: $spacing-sm;
     text-align: center;
