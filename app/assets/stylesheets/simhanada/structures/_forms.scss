@@ -81,10 +81,18 @@
           margin-top: 0;
           margin-right: 0;
         }
-
       }
-
     }
+
+    .form__group--controls {
+      .form__control-group,
+      .form__control-label {
+        float: left;
+        margin-left: $spacing-lg;
+        margin-top: $spacing-xs;
+      }
+    }
+
 
     legend,
     .form__actions,
@@ -94,6 +102,66 @@
       @media screen and (min-width: $break-sm) {
         margin-left: $form-aligned-label-width;
       }
+    }
+
+  }
+
+  &--inline-grouped {
+
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $spacing-sm;
+
+    .form__group,
+    .form__actions {
+      white-space: nowrap;
+      flex: 1 1 20%;
+    }
+
+    .form__group {
+      margin: 0 $spacing-sm 0 0;
+    }
+
+    .form__actions,
+    .form__control-group,
+    .form__control-label {
+      margin-top: $base-line-height * 16px + $spacing-sm;
+    }
+
+    .form__group--controls {
+      .form__control-group,
+      .form__control-label {
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  &--inline {
+    max-width: unset;
+
+    label,
+    .form__label,
+    .form__group,
+    .form__actions,
+    .form__control-group,
+    .form__input {
+      display: inline;
+      margin: 0;
+    }
+
+    label,
+    .form__label {
+      margin-right: $spacing-xs;
+    }
+
+    .form__group {
+      margin-right: $spacing-sm;
+    }
+
+    select,
+    .#{$all-text-inputs} {
+      width: auto;
     }
 
   }
