@@ -1,0 +1,22 @@
+.error-explanation {
+
+  border: 1px $danger-color solid;
+  padding: $spacing-lg;
+  color: $danger-text-color;
+  border-radius: $block-border-radius;
+
+  h2 {
+    font-size: $base-font-size * 1.2;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: $spacing-sm;
+  }
+
+  li {
+    display: list-item;
+    margin-left: $spacing-lg;
+  }
+
+}
