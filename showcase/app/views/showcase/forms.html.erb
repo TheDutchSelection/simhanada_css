@@ -1,0 +1,295 @@
+<h1>Forms</h1>
+
+<h2>Base</h2>
+<%= showcase_example do %>
+  <form class="form" action="#">
+    <fieldset>
+      <div class="form__group">
+        <label for="shop_name">Name</label>
+        <input class="form__input" type="text" value="Ben">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_domain">Domain</label>
+        <input class="form__input" type="text" value="bben.nl">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_rating">Rating</label>
+        <select class="form__input" name="shop[rating]" id="shop_rating"><option value="0">0 stars</option>
+          <option value="1">1 star</option>
+          <option value="2">2 stars</option>
+          <option value="3">3 stars</option>
+          <option selected="selected" value="4">4 stars</option>
+          <option value="5">5 stars</option></select>
+      </div>
+
+      <div class="form__group form__group--controls">
+        <label for="shop_rating">Rating</label>
+        <div class="form__control-group">
+          <label for="shop_rating_1">
+            <input type="radio" value="1" name="shop[rating]" id="shop_rating_1">
+            1 star
+          </label>
+          <label for="shop_rating_2">
+            <input type="radio" value="2" name="shop[rating]" id="shop_rating_2">
+            2 stars
+          </label>
+          <label for="shop_rating_3">
+            <input type="radio" value="3" name="shop[rating]" id="shop_rating_3">
+            3 stars
+          </label>
+          <label for="shop_rating_4">
+            <input type="radio" value="4" name="shop[rating]" id="shop_rating_4">
+            4 stars
+          </label>
+          <label for="shop_rating_5">
+            <input type="radio" value="5" name="shop[rating]" id="shop_rating_5">
+            5 stars
+          </label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <div class="form__control-group">
+          <label for="shop_is_independent">
+            <input name="shop[is_independent]" type="hidden" value="0">
+            <input type="checkbox" value="1" name="shop[is_independent]" id="shop_is_independent">
+            Independent
+          </label>
+          <label for="shop_is_active">
+            <input name="shop[is_active]" type="hidden" value="0">
+            <input type="checkbox" value="1" name="shop[is_active]" id="shop_is_active">
+            Active
+          </label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="shop_logo">Logo</label>
+        <input class="form__input" type="file" name="shop[logo]" id="shop_logo">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_logo">Description</label>
+        <textarea class="form__input" type="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis nulla iaculis rutrum congue. Vivamus ac orci interdum, vulputate est a, interdum tellus.</textarea>
+      </div>
+
+      <div class="form__actions">
+        <input type="submit" name="commit" value="Update Shop" class="button button--submit button--primary" data-disable-with="Update Shop">
+        <a class="button" href="#">Show</a>
+        <a class="button" href="#">Back</a>
+      </div>
+
+    </fieldset>
+
+  </form>
+<% end %>
+
+<h2>Aligned</h2>
+
+<%= showcase_example do %>
+  <form class="form form--aligned" action="#">
+    <fieldset>
+      <div class="form__group">
+        <label for="shop_name">Name</label>
+        <input class="form__input" type="text" value="Ben">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_domain">Domain</label>
+        <input class="form__input" type="text" value="bben.nl">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_rating">Rating</label>
+        <select class="form__input" name="shop[rating]" id="shop_rating"><option value="0">0 stars</option>
+          <option value="1">1 star</option>
+          <option value="2">2 stars</option>
+          <option value="3">3 stars</option>
+          <option selected="selected" value="4">4 stars</option>
+          <option value="5">5 stars</option></select>
+      </div>
+
+      <div class="form__group form__group--controls">
+        <label for="shop_rating">Rating</label>
+        <div class="form__control-group">
+          <label for="shop_rating_1">
+            <input type="radio" value="1" name="shop[rating]" id="shop_rating_1">
+            1 star
+          </label>
+          <label for="shop_rating_2">
+            <input type="radio" value="2" name="shop[rating]" id="shop_rating_2">
+            2 stars
+          </label>
+          <label for="shop_rating_3">
+            <input type="radio" value="3" name="shop[rating]" id="shop_rating_3">
+            3 stars
+          </label>
+          <label for="shop_rating_4">
+            <input type="radio" value="4" name="shop[rating]" id="shop_rating_4">
+            4 stars
+          </label>
+          <label for="shop_rating_5">
+            <input type="radio" value="5" name="shop[rating]" id="shop_rating_5">
+            5 stars
+          </label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <div class="form__control-group">
+          <label for="shop_is_independent">
+            <input name="shop[is_independent]" type="hidden" value="0">
+            <input type="checkbox" value="1" name="shop[is_independent]" id="shop_is_independent">
+            Independent
+          </label>
+          <label for="shop_is_active">
+            <input name="shop[is_active]" type="hidden" value="0">
+            <input type="checkbox" value="1" name="shop[is_active]" id="shop_is_active">
+            Active
+          </label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="shop_logo">Logo</label>
+        <input class="form__input" type="file" name="shop[logo]" id="shop_logo">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_logo">Description</label>
+        <textarea class="form__input" type="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis nulla iaculis rutrum congue. Vivamus ac orci interdum, vulputate est a, interdum tellus.</textarea>
+      </div>
+
+      <div class="form__actions">
+        <input type="submit" name="commit" value="Update Shop" class="button button--submit button--primary" data-disable-with="Update Shop">
+        <a class="button" href="#">Show</a>
+        <a class="button" href="#">Back</a>
+      </div>
+
+    </fieldset>
+
+  </form>
+<% end %>
+
+<h2>Inline grouped</h2>
+<div class="alert alert--warning">
+  <b>Warning</b>
+  Don't use a fieldset
+</div>
+
+<%= showcase_example do %>
+  <form class="form form--inline-grouped" action="#">
+    <!--<fieldset>-->
+      <div class="form__group">
+        <label for="shop_name">Name</label>
+        <input class="form__input" type="text" value="Ben">
+      </div>
+
+      <div class="form__group">
+        <label for="shop_rating">Rating</label>
+        <select class="form__input" name="shop[rating]" id="shop_rating"><option value="0">0 stars</option>
+          <option value="1">1 star</option>
+          <option value="2">2 stars</option>
+          <option value="3">3 stars</option>
+          <option selected="selected" value="4">4 stars</option>
+          <option value="5">5 stars</option></select>
+      </div>
+
+      <div class="form__group form__group--controls">
+        <label for="shop_rating">Rating</label>
+        <div class="form__control-group">
+          <label for="shop_rating_1">
+            <input type="radio" value="1" name="shop[rating]" id="shop_rating_1">
+            1 star
+          </label>
+          <label for="shop_rating_2">
+            <input type="radio" value="2" name="shop[rating]" id="shop_rating_2">
+            2 stars
+          </label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <div class="form__control-group">
+          <label for="shop_is_independent">
+            <input name="shop[is_independent]" type="hidden" value="0">
+            <input type="checkbox" value="1" name="shop[is_independent]" id="shop_is_independent">
+            Independent
+          </label>
+          <label for="shop_is_active">
+            <input name="shop[is_active]" type="hidden" value="0">
+            <input type="checkbox" value="1" name="shop[is_active]" id="shop_is_active">
+            Active
+          </label>
+        </div>
+      </div>
+
+      <div class="form__actions">
+        <input type="submit" name="commit" value="Update Shop" class="button button--submit button--primary" data-disable-with="Update Shop">
+        <a class="button" href="#">Show</a>
+        <a class="button" href="#">Back</a>
+      </div>
+
+    <!--</fieldset>-->
+
+  </form>
+<% end %>
+
+<h2>Inline</h2>
+<div class="alert alert--warning">
+  <b>Warning</b>
+  Don't use a fieldset
+</div>
+
+<%= showcase_example do %>
+  <form class="form form--inline" action="#">
+    <!--<fieldset>-->
+    <div class="form__group">
+      <label for="shop_name">Name</label>
+      <input class="form__input" type="text" value="Ben">
+    </div>
+
+    <div class="form__group">
+      <label for="shop_rating">Rating</label>
+      <select class="form__input" name="shop[rating]" id="shop_rating"><option value="0">0 stars</option>
+        <option value="1">1 star</option>
+        <option value="2">2 stars</option>
+        <option value="3">3 stars</option>
+        <option selected="selected" value="4">4 stars</option>
+        <option value="5">5 stars</option></select>
+    </div>
+
+    <div class="form__group form__group--controls">
+      <label for="shop_rating">Rating</label>
+      <div class="form__control-group">
+        <label for="shop_rating_1">
+          <input type="radio" value="1" name="shop[rating]" id="shop_rating_1">
+          1
+        </label>
+        <label for="shop_rating_2">
+          <input type="radio" value="2" name="shop[rating]" id="shop_rating_2">
+          2
+        </label>
+      </div>
+    </div>
+
+    <div class="form__group">
+      <div class="form__control-group">
+        <label for="shop_is_independent">
+          <input name="shop[is_independent]" type="hidden" value="0">
+          <input type="checkbox" value="1" name="shop[is_independent]" id="shop_is_independent">
+          Independent
+        </label>
+      </div>
+    </div>
+
+    <div class="form__actions">
+      <input type="submit" name="commit" value="Submit" class="button button--submit button--primary" data-disable-with="Update Shop">
+    </div>
+
+    <!--</fieldset>-->
+
+  </form>
+<% end %>

@@ -40,7 +40,8 @@
     margin-bottom: $spacing-lg;
   }
   &__code {
-    overflow: auto;
+    overflow-x: scroll;
+    max-width: 800px;
   }
 }
 
