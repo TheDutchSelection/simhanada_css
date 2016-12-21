@@ -1,0 +1,58 @@
+<h1>Navigation</h1>
+
+<h2>Top Navigation</h2>
+<%= showcase_example do %>
+  <nav class="top-nav">
+    <div class="wrap top-nav__layout">
+
+      <ul class="top-nav__list">
+        <li class="top-nav__item top-nav__item--selected">
+          <a href="#">Apples</a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#">Oranges</a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#">Bananas</a>
+        </li>
+      </ul>
+
+      <ul class="top-nav__list top-nav__list--aligned-right">
+        <li class="top-nav__item">
+          <a href="#">Candy</a>
+        </li>
+        <li class="top-nav__item dropdown-nav">
+          <a href="#" class="dropdown-nav__toggle-link" id="top-dropdown-nav" aria-haspopup="true">Soft Drinks</a>
+          <ul class="dropdown-nav__list" aria-labelledby="top-dropdown-nav" aria-hidden="true">
+            <li class="dropdown-nav__item">
+              <a href="#">Coca Cola</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#">7-Up</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#">Dr. Pepper</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<% end %>
+
+<h2>Sub Navigation</h2>
+<%= showcase_example do %>
+  <nav class="sub-nav">
+    <ul>
+      <li class="sub-nav__item sub-nav__item--selected">
+        <a href="#">Apples</a>
+      </li>
+      <li class="sub-nav__item">
+        <a href="#">Oragnes</a>
+      </li>
+      <li class="sub-nav__item">
+        <a href="#">Bananas</a>
+      </li>
+    </ul>
+  </nav>
+<% end %>
