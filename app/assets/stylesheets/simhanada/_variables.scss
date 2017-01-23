@@ -46,7 +46,7 @@ $base-bg-color: $white;
 $base-text-color: $dark-grey;
 $base-border-color: $light-grey;
 
-$header-bg-color: darken($white, 6%);
+$header-bg-color: darken($white, 4%);
 $header-text-color: $dark-grey;
 
 $nav-bg-color: darken($white, 4%);
@@ -70,6 +70,14 @@ $mono: Courier, mono;
 $base-font-family: $sans-serif;
 $base-font-size: 16px;
 $base-line-height: 1.2;
+
+// Font sizes
+$font-xxl-size: 25px;
+$font-xl-size: 21px;
+$font-lg-size: 18px;
+$font-md-size: 16px;
+$font-sm-size: 15px;
+$font-xs-size: 14px;
 
 // Font weights
 $normal: 400;
@@ -124,7 +132,8 @@ $label-warning-bg-color: $warning-color;
 $label-danger-bg-color: $danger-color;
 
 // Tables
-$table-stripe-color: darken($white, 5%);
+$table-stripe-color: darken($white, 3%);
+$table-border-color: darken($white, 6%);
 
 // Z-Index
 $z-index-level-1: 100;

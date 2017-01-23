@@ -13,12 +13,13 @@
     padding: unset;
   }
   &__item {
-    display: inline-block;
+    @media screen and (min-width: $break-sm) {
+      display: inline-block;
+    }
   }
 }
 
 @mixin button {
-
   appearance: none;
   border-radius: $base-border-radius;
   cursor: pointer;
@@ -174,7 +175,7 @@
     warning: $warning-bg-color,
     danger: $danger-bg-color
   );
-  
+
   $text-colors: (
     blank: $blank-text-color,
     primary: $primary-text-color,
@@ -183,7 +184,7 @@
     warning: $warning-text-color,
     danger: $danger-text-color
   );
-  
+
   .#{$context} {
     background-color: map-get($background-colors, $context);
     color: map-get($text-colors, $context);

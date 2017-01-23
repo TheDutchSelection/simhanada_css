@@ -4,20 +4,37 @@
   align-items: center;
 
   &__client-image {
-    margin-right: 18px;
-    height: 70px;
+    margin-right: 10px;
+    height: 35px;
+
+    @media screen and (min-width: $break-sm) {
+      margin-right: 18px;
+      height: 70px;
+    }
+
   }
 
   &__image {
-    margin-right: 18px;
-    width: 70px;
-    height: 70px;
-    background: image-url('logo-no-border.png') no-repeat;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    background: image-url('logo-no-border.png') no-repeat top left;
+    background-size: contain;
+
+    @media screen and (min-width: $break-sm) {
+      margin-right: 18px;
+      width: 70px;
+      height: 70px;
+    }
   }
 
   &__name {
     color: $orange;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
+    font-weight: $bold;
+    @media screen and (min-width: $break-sm) {
+      font-size: 4rem;
+    }
   }
 
 }
