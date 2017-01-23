@@ -1,12 +1,12 @@
 .table {
 
   &--condensed {
+    font-size: $font-sm-size;
     tr {
       padding: 0;
     }
     th, td {
-      padding-top: 0.2em;
-      padding-bottom: 0.2em;
+      padding: .2em .4em;
     }
   }
 
@@ -25,7 +25,7 @@
   }
 
   &--results {
-    font-size: 90%;
+    font-size: $font-xs-size;
     width: 100%;
     tr {
       padding: 0;
@@ -48,4 +48,3 @@
     background-color: $danger-bg-color;
   }
 }
-

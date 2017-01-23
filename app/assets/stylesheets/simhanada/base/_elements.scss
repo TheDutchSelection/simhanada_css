@@ -77,13 +77,13 @@ th {
 
 td,
 th {
-  padding: $spacing-sm $spacing-sm $spacing-sm 0;
-  border-bottom: 1px $base-border-color solid;
+  padding: $spacing-sm;
+  border-bottom: 1px $table-border-color solid;
   text-align: left;
 }
 
 th {
-  border-color: shade($base-border-color, 25%);
+  border-color: shade($table-border-color, 10%);
   font-weight: $bold;
 }
 

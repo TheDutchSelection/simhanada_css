@@ -1,5 +1,8 @@
 .footer {
   text-align: center;
-  padding: 3rem;
+  padding: $spacing-lg;
   font-size: 1.2rem;
+  @media screen and (min-width: $break-sm) {
+    padding: 3rem;
+  }
 }

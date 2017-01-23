@@ -1,10 +1,11 @@
 .wrap {
-  padding: 0 $spacing-lg;
-  min-width: $screen-sm;
+  padding: 0 $spacing-sm;
+  width: 100%;
   margin: auto;
 
   @media screen and (min-width: $break-sm) {
     width: auto;
+    padding: 0 $spacing-lg;
   }
 
   @media screen and (min-width: $break-xl) {
@@ -23,5 +24,3 @@
   }
 
 }
-
-

@@ -34,8 +34,15 @@
 .showcase-example {
   border: 1px $base-border-color solid;
   border-radius: $base-border-radius;
-  padding: $spacing-lg;
-  margin-bottom: $spacing-lg;
+  padding: $spacing-sm;
+  margin-bottom: $spacing-sm;
+
+  @media screen and (min-width: $break-sm) {
+    padding: $spacing-lg;
+    margin-bottom: $spacing-lg;
+  }
+
+
   &__sample {
     margin-bottom: $spacing-lg;
   }
