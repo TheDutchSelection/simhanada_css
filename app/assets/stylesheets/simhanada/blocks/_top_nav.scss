@@ -20,7 +20,7 @@ $top-nav-border-color: shade($nav-bg-color, 10%);
     }
 
     > a {
-      display: block;
+      display: inline-block;
       color: $nav-text-color;
 
       &:hover {
@@ -29,6 +29,7 @@ $top-nav-border-color: shade($nav-bg-color, 10%);
     }
   }
 
+  // Mobile view only
   @media screen and (max-width: $break-sm) {
     &__item {
       display: block;
@@ -45,6 +46,7 @@ $top-nav-border-color: shade($nav-bg-color, 10%);
     }
   }
 
+
   @media screen and (min-width: $break-sm) {
     padding: $spacing-sm 0 0 0;
     margin-bottom: $spacing-md;
@@ -60,11 +62,10 @@ $top-nav-border-color: shade($nav-bg-color, 10%);
 
       &--selected {
         margin-bottom: -1px;
-        border-bottom-color: $white;
+        border-bottom: 1px $white solid;
       }
 
       > a {
-        display: inline-block;
         padding: 0 30px;
         line-height: 36px;
       }
