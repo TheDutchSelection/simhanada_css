@@ -1,18 +1,23 @@
 .breadcrumbs {
 
-  &--xs {
-    font-size: 80%;
+  font-size: $font-sm-size;
+  margin-bottom: $spacing-sm;
+  padding-bottom: $spacing-xs;
+  border-bottom: 1px $base-border-color dotted;
+
+  > * {
+    display: inline-block;
   }
 
-  &--sm {
-    font-size: 85%;
+  > *:after {
+    display: inline-block;
+    margin: 0 0.1em 0 0.3em;
+    content: '»';
+    color: $dark-grey;
   }
 
-  &--lg {
-    font-size: 110%;
+  > *:last-child:after {
+    content: '';
   }
 
-  &--xl {
-    font-size: 125%;
-  }
 }
