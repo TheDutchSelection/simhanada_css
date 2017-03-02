@@ -4,7 +4,27 @@
 <%= showcase_example do %>
   <nav class="top-nav">
     <div class="top-nav__layout">
+      <ul class="top-nav__list">
+        <li class="top-nav__item">
+          <a href="#">Apples</a>
+        </li>
+        <li class="top-nav__item top-nav__item--selected">
+          <a href="#">Oranges</a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#">Bananas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<% end %>
 
+
+<h2>Top navigation with split items</h2>
+
+<%= showcase_example do %>
+  <nav class="top-nav">
+    <div class="top-nav__layout">
       <ul class="top-nav__list">
         <li class="top-nav__item">
           <a href="#">Apples</a>
@@ -21,23 +41,60 @@
         <li class="top-nav__item">
           <a href="#">Candy</a>
         </li>
-        <li class="top-nav__item dropdown-nav">
-          <a href="#" class="dropdown-nav__toggle-link" id="top-dropdown-nav" aria-haspopup="true">Soft Drinks</a>
-          <ul class="dropdown-nav__list" aria-labelledby="top-dropdown-nav" aria-hidden="true">
-            <li class="dropdown-nav__item">
-              <a href="#">Coca Cola</a>
-            </li>
-            <li class="dropdown-nav__item">
-              <a href="#">7-Up</a>
-            </li>
-            <li class="dropdown-nav__item">
-              <a href="#">Dr. Pepper</a>
-            </li>
-          </ul>
+        <li class="top-nav__item">
+          <a href="#">Soda</a>
         </li>
       </ul>
     </div>
   </nav>
+<% end %>
+
+<h2>Top navigation with drop downs menu</h2>
+
+<%= showcase_example do %>
+  <nav class="top-nav">
+    <div class="top-nav__layout">
+      <ul class="top-nav__list">
+        <li class="top-nav__item dropdown-nav">
+          <a href="#" class="dropdown-nav__toggle-link">Apples</a>
+          <ul class="dropdown-nav__list" aria-labelledby="top-dropdown-nav" aria-hidden="true">
+            <li class="dropdown-nav__item">
+              <a href="#">Jonagold</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#">Elstar</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#">Granny Smith</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-nav__item top-nav__item--selected dropdown-nav">
+          <a href="#" class="dropdown-nav__toggle-link">Oranges</a>
+          <ul class="dropdown-nav__list" aria-labelledby="top-dropdown-nav" aria-hidden="true">
+            <li class="dropdown-nav__item">
+              <a href="#">Spain</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#">Italy</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#">Greece</a>
+            </li>
+          </ul>
+        </li>
+        <li class="top-nav__item">
+          <a href="#">Bananas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script type="text/javascript" charset="utf-8">
+    // init dropdown menus
+    var navParents = document.querySelectorAll('.dropdown-nav');
+    new DropdownNav(navParents[0]);
+    new DropdownNav(navParents[1]);
+  </script>
 <% end %>
 
 <h2>Sub Navigation</h2>
