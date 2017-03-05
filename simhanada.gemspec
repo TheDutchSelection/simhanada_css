@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'sass-rails', '>= 5.0.6'
   spec.add_runtime_dependency 'sprockets-es6', '>= 0.9.0'
   spec.add_runtime_dependency 'kaminari', '>= 0.17.0'
+  spec.add_runtime_dependency 'octicons_helper', '3.0.1'
 end
