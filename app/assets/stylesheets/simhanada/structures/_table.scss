@@ -19,9 +19,17 @@
       padding-left: 1em;
       padding-right: 1em;
     }
+
     tbody tr:nth-child(odd) {
       background-color: $table-stripe-color;
     }
+
+    tbody tr.tr {
+      &--danger, &--danger-bg {
+        background-color: $danger-bg-color;
+      }
+    }
+
   }
 
   &--results {
