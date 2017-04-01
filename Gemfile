@@ -16,5 +16,5 @@ group :development, :test do
   gem 'bourbon'
   gem 'sass-rails'
   gem 'sprockets-es6'
-  # gem 'kaminari'
+  gem 'kaminari'
 end
