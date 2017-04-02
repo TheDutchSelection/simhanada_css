@@ -71,8 +71,8 @@
               $button-border-color: $base-border-color,
               $button-text-color: $base-text-color ) {
 
-  background-color: $base-bg-color;
-  @include linear-gradient($button-bg-color, shade($button-bg-color, 10%));
+  background-color: $button-bg-color;
+  background-image: linear-gradient($button-bg-color, shade($button-bg-color, 10%));
   border: 1px $button-border-color solid;
   color: $button-text-color;
 
@@ -80,7 +80,7 @@
   &:focus,
   &.active {
     background-color: shade($button-bg-color, 8%);
-    @include linear-gradient(shade($button-bg-color, 5%), shade($button-bg-color, 18%));
+    background-image: linear-gradient(shade($button-bg-color, 5%), shade($button-bg-color, 18%));
     color: $button-text-color;
     border-color: shade($button-border-color, 6%);
   }

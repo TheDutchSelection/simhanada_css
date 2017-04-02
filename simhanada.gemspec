@@ -18,10 +18,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'autoprefixer-rails', '>= 6.3.6'
-  spec.add_runtime_dependency 'bourbon', '>= 4.2.7'
+  spec.add_runtime_dependency 'autoprefixer-rails', '>= 6.7.7'
+  spec.add_runtime_dependency 'bourbon', '>= 4.3.3'
   spec.add_runtime_dependency 'sass-rails', '>= 5.0.6'
-  spec.add_runtime_dependency 'sprockets-es6', '>= 0.9.0'
-  spec.add_runtime_dependency 'kaminari', '>= 0.17.0'
+  spec.add_runtime_dependency 'sprockets-es6', '>= 0.9.2'
+  spec.add_runtime_dependency 'kaminari', '>= 1.0.1'
   spec.add_runtime_dependency 'octicons_helper', '3.0.1'
 end

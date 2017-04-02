@@ -6,15 +6,15 @@ gemspec
 # Local gems
 
 group :development, :test do
-  ruby '2.3.1'
+  ruby '2.3.3'
 
-  gem 'rails', '5.0.0.1'
+  gem 'rails', '5.0.2'
   gem 'sqlite3'
 
   # todo: these are defined in the gemspec, but must be used here.
-  gem 'autoprefixer-rails', '>= 6.3.6'
-  gem 'bourbon', '>= 4.2.7'
-  gem 'sass-rails', '>= 5.0.6'
-  gem 'sprockets-es6', '>= 0.9.0'
-  gem 'kaminari', '>= 0.17.0'
+  gem 'autoprefixer-rails'
+  gem 'bourbon'
+  gem 'sass-rails'
+  gem 'sprockets-es6'
+  gem 'kaminari'
 end
