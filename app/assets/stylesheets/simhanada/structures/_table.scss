@@ -55,4 +55,18 @@
   &--danger-bg {
     background-color: $danger-bg-color;
   }
+  &--success {
+    background-color: $success-bg-color;
+    color: $success-text-color;
+  }
+  &--success-bg {
+    background-color: $success-bg-color;
+  }
+  &--warning {
+    background-color: $warning-bg-color;
+    color: $warning-text-color;
+  }
+  &--warning-bg {
+    background-color: $warning-bg-color;
+  }
 }
