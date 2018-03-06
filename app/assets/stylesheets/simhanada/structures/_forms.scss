@@ -75,6 +75,14 @@
           width: calc(#{$form-max-width} - #{$form-aligned-label-width} - #{$grid-gutter});
         }
 
+        .form__input--small {
+          width: calc((#{$form-max-width} - #{$form-aligned-label-width} - #{$grid-gutter})/4);
+        }
+
+        .form__date_select {
+          width: calc((#{$form-max-width} - #{$form-aligned-label-width} - #{$grid-gutter})/3);
+        }
+
         .form__control-group,
         .form__control-label {
           float: left;
