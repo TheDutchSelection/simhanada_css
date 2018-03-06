@@ -75,7 +75,7 @@
           width: calc(#{$form-max-width} - #{$form-aligned-label-width} - #{$grid-gutter});
         }
 
-        .form__input-small {
+        .form__input--small {
           width: calc((#{$form-max-width} - #{$form-aligned-label-width} - #{$grid-gutter})/4);
         }
 
