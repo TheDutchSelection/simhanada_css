@@ -30,6 +30,18 @@
       }
     }
 
+    tbody tr.tr {
+      &--success, &--success-bg {
+        background-color: $success-bg-color;
+      }
+    }
+
+    tbody tr.tr {
+      &--warning, &--warning-bg {
+        background-color: $warning-bg-color;
+      }
+    }
+
   }
 
   &--results {
