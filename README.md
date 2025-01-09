@@ -1,3 +1,5 @@
+# This is no longer updated, we'll remove it once we stop using PC History
+
 # Simhanada
 
 This is Simhanada, CSS and JS cornerstones of all TDS projects.
